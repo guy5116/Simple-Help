@@ -1,3 +1,7 @@
-from wikiAPI import *
+from findAction import findAction
 
-print(wikiAPI(True, 'Archbasilica of Saint John Lateran',9))
+text = ['open', 'youtube', 'hello', 'welocme', 'smorp', 'youtube']
+
+debug = True
+
+findAction(debug, text)
