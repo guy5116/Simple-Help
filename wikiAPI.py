@@ -1,12 +1,13 @@
 import requests
 from ddgs import DDGS
 from textReader import readText
+import os
 
 def PARAMSS(target):
     # Generic API request setup
     S = requests.Session()
     S.headers.update({
-        'User-Agent': 'SimpleHelp/1.0 (andrew.doubrava0311@gmail.com)'
+        'User-Agent': f'{os.getenv("wiki_api_agent")}'
     })
     URL = "https://en.wikipedia.org/w/api.php"
 
