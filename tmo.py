@@ -1,7 +1,7 @@
 from findAction import findAction
 
-text = ['open', 'youtube', 'hello', 'welocme', 'smorp', 'youtube']
+text = ['explain', 'laptop']
 
-debug = True
+debug = False
 
 findAction(debug, text)
