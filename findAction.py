@@ -1,10 +1,6 @@
-import urllib.parse
-import webbrowser
 from wikiAPI import wikiAPI
 import string
 from loadActionTarget import loadAction, loadTarget
-from fuzzywuzzy import process
-from textReader import readText
 from openAction import open
 from searchAction import search
 
@@ -25,7 +21,6 @@ def findAction(debug, text):
             # Find target and search WikiAPI to find associated article, return summary, and read it with TTS
             position = text.index(action) + 1
             wikiAPI(debug, " ".join(text[position:]).strip(string.punctuation), 0)
-            #readText(summary)
             return
         case "search":
             position = text.index(action) + 1

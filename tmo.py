@@ -1,7 +1,7 @@
 from findAction import findAction
 
-text = ['explain', 'laptop']
+text = ['search', 'laptop']
 
-debug = False
+debug = True
 
 findAction(debug, text)

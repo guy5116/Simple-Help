@@ -4,7 +4,7 @@ from scipy.io.wavfile import write
 def audioRec():
     #Audio Specs
     SAMPLE_RATE = 44100
-    DURATION = 2
+    DURATION = 3
     FILENAME = "tmp.wav"
 
     #Record Audio

@@ -59,6 +59,7 @@ def debuger(R):
     print(R.status_code)
     print(R.headers.get("Content-Type"))
     print(R.text[:500])
+    print(f"Agent:  {os.getenv("wiki_api_agent")}")
 
 def summary(data, debug, attempt, target):
     print("Wiki API Summary:\n")
@@ -66,6 +67,7 @@ def summary(data, debug, attempt, target):
         page = next(iter(data['query']['pages'].values()))
         if debug: print(page)
         print(page['extract'])
+        #readText(page['extract'])
     except KeyError:
         if debug: print("Wiki FAILURE\nAttempting DDG Search")
         try:

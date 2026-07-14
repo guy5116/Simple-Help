@@ -6,5 +6,7 @@ def audioTranscribe():
 
     segments, info = model.transcribe("tmp.wav")
 
+
+
     for segment in segments:
         return segment.text
